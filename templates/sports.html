@@ -1,0 +1,93 @@
+
+{% extends "base.html" %} 
+{% load static%}
+{% block maincontent %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Village Sports</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .temple-hero {
+            width: 100%;
+            height: 350px;
+            background: url('/media/videos/village game video2.mp4') center/cover no-repeat;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .temple-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .temple-card img {
+            width: 100%;
+            height: 280px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .temple-card h3 {
+            margin-top: 12px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="temple-hero"></div>
+
+    <h2 class="section-title">Village Sports</h2>
+
+    <div class="row">
+
+        <!-- Temple 1 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/crikgame.jpeg" alt="Game">
+                <h3>Cricket</h3>
+            </div>
+        </div>
+
+        <!-- Temple 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/village nature img6.jpeg" alt="Games">
+                <h3>Cricket Ground</h3>
+            </div>
+        </div>
+        <!-- Temple 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrtiworkers2.jpeg" alt="Game">
+                <h3>childrens funny games</h3>
+            </div>
+        </div> <br><br>
+        <div class="carousel-item active">
+        <video width="40%" height="350" controls autoplay muted loop>
+            <source src="/media/videos/village game video.mp4" type="video/mp4">
+            <h3>Kabbadi</h3>
+        </video>
+        </video>
+    </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+{% endblock maincontent %}

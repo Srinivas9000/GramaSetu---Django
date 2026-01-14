@@ -1,0 +1,122 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block maincontent %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        .temple-hero {
+            width: 100%;
+            height: 350px;
+            background: url('/media/images/panchaiyrti0.jpeg') center/cover no-repeat;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .temple-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .temple-card img {
+            width: 100%;
+            height: 280px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .temple-card h3 {
+            margin-top: 12px;
+            font-size: 24px;
+        }
+         .back-btn {
+        display: inline-block;
+        padding: 10px 18px;
+        background: #1e90ff;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        float: right;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .back-btn:hover {
+        background: #0b63c1;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container">
+     <a href="{% url 'home' %}" class="back-btn">&larr; Back to Home</a>
+
+    <div class="temple-hero"></div>
+
+    <h2 class="section-title">Tourism of Our Village</h2>
+
+    <div class="row">
+
+        <!-- Temple 1 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrti1.jpeg" alt="Temple">
+            </div>
+        </div>
+
+        <!-- Temple 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrti2.jpeg" alt="School">
+            </div>
+        </div>
+
+        <!-- Temple 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrti3.jpeg" alt="School">
+            </div>
+        </div>
+   
+    <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrti4.jpeg" alt="School">
+            </div>
+        </div>
+ 
+    <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrti5.jpeg" alt="School">
+            </div>
+        </div>
+    
+    <div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrtiworkers.jpeg" alt="School">
+            </div>
+        </div>
+   
+<div class="col-lg-4 col-md-6">
+            <div class="temple-card">
+                <img src="/media/images/panchaiyrtiworkers2.jpeg" alt="School">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+{% endblock maincontent %}

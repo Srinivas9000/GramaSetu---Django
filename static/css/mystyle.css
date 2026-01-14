@@ -1,0 +1,314 @@
+img{
+    height:500px;
+    width:10vh;
+}
+.footer{
+    color:#b8e7b8;
+    background-color:bisque;
+    padding:30px;
+    text-align:center;
+}
+.main{
+    height:30vh;
+    margin-bottom:160px;
+}
+.village-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.village-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.village-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: #0056b3;
+}
+.new-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.stat-card {
+    background: #1b1b1b;
+    padding: 35px 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,255,170,0.3);
+}
+
+.stat-icon {
+    width: 70px;
+    height: 70px;
+    background: #a2ddca;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 15px;
+}
+
+.stat-card h3 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+/* -----------------------------------
+   CONTACT SECTION STYLING 
+--------------------------------------*/
+.contact {
+    padding: 50px 0;
+    background: hwb(106 70% 4%);
+}
+
+/* Contact Wrapper Layout */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Left Panel (Contact Info) */
+.contact-info-panel {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.06);
+}
+
+.contact-info-header h3 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contact-info-header p {
+    opacity: 0.8;
+}
+
+/* Info Cards */
+.contact-info-cards {
+    margin-top: 25px;
+    display: grid;
+    gap: 18px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 14px;
+    background: #f0f5ff;
+    transition: 0.3s;
+    border-left: 4px solid #0d6efd;
+}
+
+.info-card:hover {
+    transform: translateX(6px);
+    background: #e8f0ff;
+}
+
+/* Icons in Cards */
+.icon-container {
+    width: 55px;
+    height: 55px;
+    background: #0d6efd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 26px;
+}
+
+/* Contact Info Text */
+.card-content h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Social Panel Left Side */
+.social-links-panel {
+    margin-top: 25px;
+}
+
+.social-links-panel h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    font-size: 22px;
+    background: #0d6efd;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #084fc7;
+}
+
+/* -----------------------------------
+   RIGHT PANEL (MAP + FORM)
+--------------------------------------*/
+.contact-form-panel {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.06);
+}
+
+.map-container {
+    width: 100%;
+    height: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Form Area */
+.form-container h3 {
+    font-weight: 700;
+}
+
+.form-floating label {
+    font-size: 14px;
+}
+
+.btn-submit {
+    background: #0d6efd;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 12px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: #084fc7;
+}
+
+/* -----------------------------------
+   FOOTER STYLING 
+--------------------------------------*/
+.footer-section {
+  background: #222;
+  color: white;
+}
+
+.footer-icon {
+  font-size: 30px;
+  color: hsl(162, 28%, 81%);
+  margin-right: 15px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: hsl(180, 2%, 90%);
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background: hsl(163, 90%, 96%);
+}
+.village-title {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2e7d32; /* green – development theme */
+
+    /* 3D Text Effect */
+    text-shadow:
+        1px 1px 0 #1b5e20,
+        2px 2px 0 #1b5e20,
+        3px 3px 0 #1b5e20,
+        4px 4px 10px rgba(0,0,0,0.3);
+
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+}
+
+.village-title:hover {
+    transform: scale(1.08);
+    text-shadow:
+        2px 2px 0 #1b5e20,
+        4px 4px 15px rgba(0,0,0,0.4);
+}

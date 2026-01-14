@@ -1,0 +1,97 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block maincontent %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Village Development</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+
+<div class="about-container">
+
+    <!-- Header -->
+    <section class="about-header">
+        <h1>🌾 About Our Village Development Initiative</h1>
+        <p>Empowering rural communities through digital solutions and sustainable growth.</p>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="card">
+        <h2>🎯 Mission & Vision</h2>
+        <p><strong>Mission:</strong> To improve the quality of life in villages by promoting education, healthcare, sanitation, and digital awareness.</p>
+        <p><strong>Vision:</strong> To build a smart, self-reliant, and sustainable village through technology and community participation.</p>
+    </section>
+
+    <!-- Development Focus Areas -->
+    <section class="card">
+        <h2>🌱 Development Focus Areas</h2>
+        <ul class="focus-list">
+            <li>📚 Education & Digital Literacy</li>
+            <li>🚰 Clean Water & Sanitation</li>
+            <li>🏥 Healthcare Awareness</li>
+            <li>🌾 Agriculture Support</li>
+            <li>👩‍💻 Skill Development & Employment</li>
+        </ul>
+    </section>
+
+    <!-- Problems & Solutions -->
+    <section class="card">
+        <h2>🛠 Problems & Solutions</h2>
+        <p><strong>Problems:</strong></p>
+        <ul>
+            <li>Lack of digital access</li>
+            <li>No feedback or communication platform</li>
+            <li>Limited awareness of government schemes</li>
+        </ul>
+        <p><strong>Solutions:</strong></p>
+        <ul>
+            <li>Village-based digital platform</li>
+            <li>Online feedback and service pages</li>
+            <li>Centralized information system</li>
+        </ul>
+    </section>
+
+    <!-- Community & Team -->
+    <section class="card">
+        <h2>🤝 Community & Team</h2>
+        <p>This initiative is supported by village leaders, volunteers, youth groups, and social workers working together for rural development.</p>
+    </section>
+
+    <!-- Achievements & Impact -->
+    <section class="card">
+        <h2>🏆 Achievements & Impact</h2>
+        <ul>
+            <li>✔ Increased community participation</li>
+            <li>✔ Improved communication between villagers and organizers</li>
+            <li>✔ Digital record of feedback and services</li>
+        </ul>
+    </section>
+
+    <!-- Future Plans -->
+    <section class="card">
+        <h2>🚀 Future Plans</h2>
+        <ul>
+            <li>Online grievance system</li>
+            <li>Village job & skill portal</li>
+            <li>Mobile app for villagers</li>
+            <li>Integration with government schemes</li>
+        </ul>
+    </section>
+
+    <!-- Social Responsibility -->
+    <section class="card social">
+        <h2>❤️ Social Responsibility</h2>
+        <p>
+            We believe in equality, sustainability, and digital empowerment.
+            Our goal is to ensure that no villager is left behind in the digital era.
+        </p>
+    </section>
+
+</div>
+{% endblock maincontent %}
+</body>
+</html>

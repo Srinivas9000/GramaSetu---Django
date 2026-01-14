@@ -1,0 +1,335 @@
+{% extends "base.html" %} 
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome {{ request.user.username }}</h1>
+<p>This website opens only after login.</p>
+
+<a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
+
+{% block carousel %}
+<div id="carouselExampleIndicators"  class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+    
+  </div>
+     
+   <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="/media/images/entranceimg2.jpeg"  class="d-block w-100" alt="nature3"  style="height: 600px; object-fit: cover;">
+    </div>
+    <div class="carousel-item active">
+        <video width="100%" height="650" controls autoplay muted loop>
+            <source src="/media/videos/v entrance video1.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="carousel-item">
+        <video width="100%" height="650" controls autoplay muted loop>
+            <source src="/media/videos/v nature vedio3.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="carousel-item">
+      <img src="/media/images/villagenatureimg12.jpeg" class="d-block w-100" alt="nature3"  style="height: 600px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="/media/images/skyimg2.jpeg" class="d-block w-100" alt="nature3"  style="height: 600px; object-fit: cover;">
+    </div>
+</div>
+
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock carousel %}
+
+{% block maincontent %}
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  
+</head>
+<main id="main">
+<div class="row justify-content-center">
+  <div class="col-lg-10">
+    <div class="hero-stats new-stats" data-aos="fade-up" data-aos-delay="500">
+
+      <div class="stat-card">
+        <div class="stat-icon"><i class="bi bi-trophy"></i></div>
+        <h3><span class="purecounter" data-purecounter-start="0" data-purecounter-end="75" data-purecounter-duration="1"></span>75%</h3>
+        <p>DEVELOPMENT OF VILLAGE</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon"><i class="bi bi-globe"></i></div>
+        <h3><span class="purecounter" data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"></span>3000+</h3>
+        <p>VILLAGE POPULATION</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon"><i class="bi bi-people"></i></div>
+        <h3><span class="purecounter" data-purecounter-start="0" data-purecounter-end="55" data-purecounter-duration="1"></span>55%</h3>
+        <p>OF OLD-AGES IN VILLAGE</p>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon"><i class="bi bi-people"></i></div>
+        <h3><span class="purecounter" data-purecounter-start="0" data-purecounter-end="45" data-purecounter-duration="1"></span>45%</h3>
+        <p>OF TEENAGERS IN VILLAGE</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+</div>
+
+
+    <div class="row gy-4 portfolio-grid">
+
+  <!-- CARD 1 -->
+  <div class="col-lg-4 col-md-6">
+    <div class="village-card">
+      <img src="/media/images/vinayakatemple.jpeg" alt="Temple Image">
+      <div class="card-content">
+        <h3>Temples</h3>
+        <p>All historical and devotional temples located in our village.</p>
+        <a href="/temples/" class="card-btn">View More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="col-lg-4 col-md-6">
+    <div class="village-card">
+      <img src="/media/images/panchaiyrti.jpeg" alt="Panchayathi Office">
+      <div class="card-content">
+        <h3>Panchayathi</h3>
+        <p>Village development, management and survey details.</p>
+        <a href="/panchaiyeti/" class="card-btn">View More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="col-lg-4 col-md-6">
+    <div class="village-card">
+      <img src="/media/images/villagenatareimg11.jpeg" alt="Tourism Image">
+      <div class="card-content">
+        <h3>Tourism</h3>
+        <p>Explore natural locations and beautiful tourist spots.</p>
+        <a href="/tourism/" class="card-btn">View More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <div class="village-card">
+      <img src="/media/images/farmingimg2.jpeg" alt="Tourism Image">
+      <div class="card-content">
+        <h3>Farming</h3>
+        <p> indian power farmaer life.</p>
+        <a href="/farming/" class="card-btn">View More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <div class="village-card">
+      <img src="/media/images/village nature img6.jpeg" alt="Tourism Image">
+      <div class="card-content">
+        <h3>Sports</h3>
+        <p> Village Local Games</p>
+        <a href="/sports/" class="card-btn">View More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <div class="village-card">
+      <img src="/media/images/schoolimg2.jpeg" alt="Tourism Image">
+      <div class="card-content">
+        <h3>School</h3>
+        <p> Village School</p>
+        <a href="/school/" class="card-btn">View More</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+
+        <h2>Contact</h2>
+        <p>Any Other Information </p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info-panel">
+            <div class="contact-info-header">
+              <h3>Contact Information</h3>
+              <p>all About Surounding village News Contact ME</p>
+            </div>
+
+            <div class="contact-info-cards">
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-pin-map-fill"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Our Location</h4>
+                  <p>Farijepeta,Rajanagaram</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-envelope-open"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Email Us</h4>
+                  <p>infofarijellipeta@gmail.com</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Call Us</h4>
+                  <p>+91 9000567484</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="icon-container">
+                  <i class="bi bi-clock-history"></i>
+                </div>
+                <div class="card-content">
+                  <h4>Working Hours</h4>
+                  <p>Every Day: 6AM - 9AM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-panel">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <div class="map-container">
+              <iframe src="map.jpeg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-container">
+              <h3>Send Us a Message</h3>
+              <p>write your Message</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="nameInput" name="name" placeholder="Full Name" required="">
+                  <label for="nameInput">Full Name</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="emailInput" name="email" placeholder="Email Address" required="">
+                  <label for="emailInput">Email Address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject" required="">
+                  <label for="subjectInput">Ward Number</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="messageInput" name="message" rows="5" placeholder="Your Message" style="height: 150px" required=""></textarea>
+                  <label for="messageInput">Your Message</label>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <div class="d-grid">
+                  <button type="submit" class="btn-submit">Send Message <i class="bi bi-send-fill ms-2"></i></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+ <footer class="footer-section">
+  <div class="container py-5">
+    <div class="row justify-content-between text-white">
+
+      <!-- Address -->
+      <div class="col-md-4 d-flex">
+        <div class="footer-icon">
+          <i class="bi bi-geo-alt"></i>
+        </div>
+        <div>
+          <h5>Address</h5>
+          <p>Farijellipeta</p>
+          <p>Rajanagaram, AP, 533294</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 d-flex">
+        <div class="footer-icon">
+          <i class="bi bi-telephone"></i>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <p>Phone: +91 9000567484</p>
+          <p>Email: infofarijellipeta@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="col-md-3 text-center text-md-start">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% endblock maincontent %}
