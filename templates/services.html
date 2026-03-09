@@ -1,0 +1,153 @@
+{% load static  %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Services{% endblock title %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="..\static\css\mystyle.css" >
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+
+        <!-- Left Side: Logo -->
+        <a class="navbar-brand fw-bold" href="#">My Feature</a>
+
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Right Side: Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-semibold">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+                </li>
+            </ul>
+
+            <!-- Logout Button (Right Side) -->
+            <a href="{% url 'logout' %}" class="btn btn-danger ms-3 px-4">Logout</a>
+        </div>
+
+    </div>
+</nav>
+
+</nav>
+{% block carousel %}{% endblock carousel %}
+   <div class="main"> 
+    {% block maincontent %}
+<head>
+    <title>Village Development Services</title>
+    <link rel="stylesheet" href="/static/css/feedback.css">
+</head>
+
+<div class="service-container">
+    <h1>🌾 Village Development Services</h1>
+    <p>We work on rural development, education, sanitation, and farming.</p>
+
+    <!-- Mission & Vision -->
+    <section class="card">
+        <h2>🎯 Mission & Vision</h2>
+        <p><strong>Mission:</strong> To improve the quality of life in villages by promoting education, healthcare, sanitation, and digital awareness.</p>
+        <p><strong>Vision:</strong> To build a smart, self-reliant, and sustainable village through technology and community participation.</p>
+    </section>
+
+    <!-- Development Focus Areas -->
+    <section class="card">
+        <h2>🌱 Development Focus Areas</h2>
+        <ul>
+            <li>📚 Education & Digital Literacy</li>
+            <li>🚰 Clean Water & Sanitation</li>
+            <li>🏥 Healthcare Awareness</li>
+            <li>🌾 Agriculture Support</li>
+            <li>👩‍💻 Skill Development & Employment</li>
+        </ul>
+    </section>
+
+    <!-- Problems & Solutions -->
+    <section class="card">
+        <h2>🛠 Problems & Solutions</h2>
+        <p><strong>Problems:</strong></p>
+        <ul>
+            <li>Lack of digital access</li>
+            <li>No feedback or communication platform</li>
+            <li>Limited awareness of government schemes</li>
+        </ul>
+        <p><strong>Solutions:</strong></p>
+        <ul>
+            <li>Village-based digital platform</li>
+            <li>Online feedback and service pages</li>
+            <li>Centralized information system</li>
+        </ul>
+    </section>
+
+    <!-- Community & Team -->
+    <section class="card">
+        <h2>🤝 Community & Team</h2>
+        <p>This initiative is supported by village leaders, volunteers, youth groups, and social workers working together for rural development.</p>
+    </section>
+
+    <!-- Achievements & Impact -->
+    <section class="card">
+        <h2>🏆 Achievements & Impact</h2>
+        <ul>
+            <li>✔ Increased community participation</li>
+            <li>✔ Improved communication between villagers and organizers</li>
+            <li>✔ Digital record of feedback and services</li>
+        </ul>
+    </section>
+
+    <!-- Future Plans -->
+    <section class="card">
+        <h2>🚀 Future Plans</h2>
+        <ul>
+            <li>Online grievance system</li>
+            <li>Village job & skill portal</li>
+            <li>Mobile app for villagers</li>
+            <li>Integration with government schemes</li>
+        </ul>
+    </section>
+
+    <!-- Social Responsibility -->
+    <section class="card social">
+        <h2>❤️ Social Responsibility</h2>
+        <p>
+            We believe in equality, sustainability, and digital empowerment.
+            Our goal is to ensure that no villager is left behind in the digital era.
+        </p>
+    </section>
+
+</div>
+                
+    <div class="feedback-card">
+        <h2>💬 Feedback Form</h2>
+
+        {% if messages %}
+            {% for message in messages %}
+                <p class="success-msg">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+</div>
+
+    
+    {% endblock maincontent %}</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="{% static 'js/alert.js' %}"></script>
+</body>
+</html>
