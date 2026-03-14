@@ -16,7 +16,7 @@ SECRET_KEY = 'django-insecure-io@-hee38y1vel&0p57r-9rkm4-f*9afk-ozuy=sguwsvk)n3!
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['nivas.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # APPLICATIONS
