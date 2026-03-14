@@ -14,9 +14,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY
 SECRET_KEY = 'django-insecure-io@-hee38y1vel&0p57r-9rkm4-f*9afk-ozuy=sguwsvk)n3!'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['nivas.pythonanywhere.com']
+ALLOWED_HOSTS = ['']
 
 
 # APPLICATIONS
