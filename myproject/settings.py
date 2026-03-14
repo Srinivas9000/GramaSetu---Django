@@ -19,9 +19,11 @@ SECRET_KEY = os.getenv("SECRET_KEY", "default_fallback_secret_key")
 
 DEBUG = os.getenv("DEBUG") == "True"
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','gramasetu-django-production.up.railway.app']
 
+CSRF_TRUSTED_ORIGINS = ['https://gramasetu-django-production.up.railway.app']
 
+INTERNAL_IPS = ['127.0.0.1', 'localhost:8000']
 # APPLICATIONS
 INSTALLED_APPS = [
     'django.contrib.admin',
