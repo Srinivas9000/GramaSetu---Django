@@ -33,7 +33,6 @@ urlpatterns = [
     path("sports/",sports,name="sports"),
     path("services/",services,name="services"),
     path('logout/', logout_view, name='logout'), 
-    path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
 
 
