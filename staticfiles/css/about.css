@@ -1,0 +1,81 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    background:
+        linear-gradient(
+            rgba(29, 38, 113, 0.6),
+            rgba(195, 55, 100, 0.6)
+        ),
+        url("/media/images/login page img.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+html, body {
+    background-color: transparent !important;
+}
+
+
+
+.about-container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.about-header {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.about-header h1 {
+    font-size: 32px;
+    color: #2c3e50;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card h2 {
+    color: hsl(120, 9%, 96%);
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin: 8px 0;
+    color: #333;
+}
+
+.focus-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.social {
+    background: #e8f5e9;
+    border-left: 6px solid hsl(120, 12%, 97%);
+}
