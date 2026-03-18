@@ -1,9 +1,6 @@
-{% extends "base.html" %} {% block title1 %}Home{% endblock title1 %}
+{% extends "base.html" %} {% block title1 %}FJ - Home{% endblock title1 %}
 {% load static%}
-<center>
-<h1>Welcome {{ request.user.username }}</h1>
-<a href="{% url 'logout' %}">Logout</a>
-</center>
+
 
 {% block carousel %}
 <div id="carouselExampleIndicators"  class="carousel slide" data-bs-ride="carousel">
@@ -63,7 +60,7 @@
 </head>
 <main id="main">
 <div class="row justify-content-center">
-  <div class="col-lg-10">
+  <div class="col-lg-6 col-md-8 col-12">
     <div class="hero-stats new-stats" data-aos="fade-up" data-aos-delay="500">
 
       <div class="stat-card">
@@ -141,7 +138,7 @@
         </div>
         <div>
           <h5>Address</h5>
-          <p>Farijellipeta</p>
+          <p>Farizellipeta</p>
           <p>Rajanagaram, AP, 533294</p>
         </div>
       </div>
@@ -154,15 +151,15 @@
         <div>
           <h5>Contact</h5>
           <p>Phone: +91 9#########</p>
-          <p>Email: infofarijellipeta@gmail.com</p>
+          <p>Email: infofarizellipeta@gmail.com</p>
         </div>
       </div>
 
       <!-- Follow Us -->
-      <div class="col-md-3 text-center text-md-start">
+      <div class="col-md-4 text-center text-md-start">
         <h5>Follow Us</h5>
         <div class="social-icons">
-          <a href="https://www.instagram.com/beauty_of_fj/"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.instagram.com/beauty_of_fj/"><i class="bi bi-instagram" style="font-size: 30px;"></i></a>
         </div>
       </div>
     </div>

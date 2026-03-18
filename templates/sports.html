@@ -1,5 +1,5 @@
 
-{% extends "base.html" %} 
+{% extends "base.html" %} {% block title1 %}FJ - Sports{% endblock title1 %}
 {% load static%}
 {% block maincontent %}
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
         .temple-hero {
             width: 100%;
             height: 350px;
-            background: url('/media/videos/village game video2.mp4') center/cover no-repeat;
+            background: url('/media/images/v nature img4.jpeg') center/cover no-repeat;
             border-radius: 10px;
             margin-bottom: 30px;
         }
@@ -41,6 +41,22 @@
             margin-top: 12px;
             font-size: 24px;
         }
+        .back-btn {
+        display: flex;
+        padding: 10px 18px;
+        background: #1e90ff;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .back-btn:hover {
+        background: #91e780;
+    }
     </style>
 </head>
 <body>
@@ -65,20 +81,17 @@
         <div class="col-lg-4 col-md-6">
             <div class="temple-card">
                 <img src="/media/images/village nature img6.jpeg" alt="Games">
-                <h3>Cricket Ground</h3>
             </div>
         </div>
         <!-- Temple 3 -->
         <div class="col-lg-4 col-md-6">
             <div class="temple-card">
                 <img src="/media/images/panchaiyrtiworkers2.jpeg" alt="Game">
-                <h3>childrens funny games</h3>
             </div>
         </div> <br><br>
         <div class="carousel-item active">
-        <video width="40%" height="350" controls autoplay muted loop>
+        <video width="100%" height="auto" controls autoplay muted loop>
             <source src="/media/videos/village game video.mp4" type="video/mp4">
-            <h3>Kabbadi</h3>
         </video>
         </video>
     </div>
