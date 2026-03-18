@@ -12,20 +12,17 @@
 </head>
 <body>
     
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <div class="container">
+<nav class="navbar navbar-light bg-white">
+  <div class="container d-flex justify-content-between align-items-center">
 
+    <!-- Logo -->
     <a class="navbar-brand fw-bold text-dark" href="#">
-        <h1 class="village-title text-dark">GramaSetu</h1>
-        <sub><h5 class="text-dark">Hello Farizellipeta</h5></sub>
+        <h1 class="village-title text-dark mb-0">GramaSetu</h1>
+        <small class="text-dark">Hello Farizellipeta</small>
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto fw-semibold">
+    <!-- Direct Navbar Links -->
+    <ul class="navbar-nav flex-row align-items-center gap-4 fw-semibold">
 
         <li class="nav-item">
             <a class="nav-link text-dark" href="{% url 'home' %}">Home</a>
@@ -36,13 +33,14 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-dark" href="{% url 'services' %}">Services</a>
-        </li> 
-        <li class="nav-item">
-          <a class="btn btn-danger" href="{% url 'logout' %}">Logout</a>
+            <a class="nav-link text-dark" href="{% url 'services' %}">Services</a>
         </li>
-      </ul>
-    </div>
+
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="{% url 'logout' %}">Logout</a>
+        </li>
+
+    </ul>
 
   </div>
 </nav>
