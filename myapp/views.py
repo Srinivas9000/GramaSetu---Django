@@ -6,6 +6,7 @@ from django.contrib import messages
 from .forms import FeedbackForm
 
 
+@login_required(login_url='login')
 def home(request):
     return render(request, "home.html")
 
@@ -35,16 +36,24 @@ def sports(request):
     return render(request, "sports.html")
 
 def services(request):
-    if request.method == 'POST':
+
+    if request.method == "POST":
         form = FeedbackForm(request.POST)
+
         if form.is_valid():
             form.save()
-            messages.success(request, "Thank you! Your feedback has been submitted.")
-            return redirect('services')
+
+            messages.success(
+                request,
+                "✅ Thank you! Your feedback was sent successfully."
+            )
+
+            return redirect('services')   # prevents resubmit problem
+
     else:
         form = FeedbackForm()
 
-    return render(request, 'services.html', {'form': form})
+    return render(request, "services.html", {"form": form})
 
 
 def register_view(request):
@@ -69,19 +78,24 @@ def register_view(request):
 
 
 def login_view(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
+
+    # already logged in → go home
+    if request.user.is_authenticated:
+        return redirect('home')
+
+    if request.method == "POST":
+        username = request.POST.get("username")
+        password = request.POST.get("password")
 
         user = authenticate(request, username=username, password=password)
 
-        if user:
+        if user is not None:
             login(request, user)
             return redirect('home')
         else:
-            messages.error(request, "Invalid username or password")
+            messages.error(request, "Invalid credentials")
 
-    return render(request, 'login.html')
+    return render(request, "login.html")
 
 
 def logout_view(request):
@@ -89,6 +103,4 @@ def logout_view(request):
     return redirect('login')
 
 
-@login_required
-def home_view(request):
-    return render(request, 'home.html')
+
