@@ -13,31 +13,31 @@
 <body>
     
 <nav class="navbar navbar-light bg-white">
-  <div class="container d-flex justify-content-between align-items-center">
+  <div class="container d-flex justify-content-center align-items-center text-center">
 
     <!-- Logo -->
-    <a class="navbar-brand fw-bold text-dark" href="#">
-        <h1 class="village-title text-dark mb-0">GramaSetu</h1>
-        <small class="text-dark">Hello Farizellipeta</small>
+    <a class="navbar-brand village-brand" href="#">
+      <h1 class="village-title text-dark">మన ఊరూ</h1>
+      <h6 class="village-subtitle text-dark">Hello Farizellipeta</h6>
     </a>
 
     <!-- Direct Navbar Links -->
     <ul class="navbar-nav flex-row align-items-center gap-4 fw-semibold">
 
         <li class="nav-item">
-            <a class="nav-link text-dark" href="{% url 'home' %}">Home</a>
+            <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'home' %}"></i> Home</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link text-dark" href="{% url 'about' %}">About</a>
+            <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about' %}"></i> About</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link text-dark" href="{% url 'services' %}">Services</a>
+            <a class="nav-link {% if request.path == '/services/' %}active{% endif %}" href="{% url 'services' %}"></i> Services</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link text-dark" href="{% url 'logout' %}">Logout</a>
+            <a class="nav-link {% if request.path == '/logout/' %}active{% endif %}" href="{% url 'logout' %}"></i> Logout</a>
         </li>
 
     </ul>

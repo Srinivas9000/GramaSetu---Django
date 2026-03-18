@@ -1,9 +1,9 @@
-{% load static  %}
+{% extends "base.html" %} {% load static  %}
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Services{% endblock title %}</title>
+    <title>{% block title %}{% endblock title %}</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="..\static\css\mystyle.css" >
   <link rel="stylesheet" href="{% static 'css/about.css' %}">
@@ -13,7 +13,7 @@
     <div class="container">
 
         <!-- Left Side: Logo -->
-        <a class="navbar-brand fw-bold" href="#">My Feature</a>
+        <a class="navbar-brand fw-bold" href="#">Services</a>
 
         <!-- Mobile Toggle -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
