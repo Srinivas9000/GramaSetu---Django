@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% load static  %}
+ {% load static  %}
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,36 +9,37 @@
   <link rel="stylesheet" href="{% static 'css/about.css' %}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
+<nav class="navbar navbar-light bg-white">
+  <div class="container d-flex justify-content-center align-items-center text-center">
 
-        <!-- Left Side: Logo -->
-        <a class="navbar-brand fw-bold" href="#">Services</a>
+    <!-- Logo -->
+    <a class="navbar-brand village-brand" href="#">
+      <h1 class="village-title text-dark">మన ఊరూ</h1>
+      <h6 class="village-subtitle text-dark">Hello Farizellipeta</h6>
+    </a>
 
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Direct Navbar Links -->
+    <ul class="navbar-nav flex-row align-items-center gap-4 fw-semibold">
 
-        <!-- Right Side: Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto fw-semibold">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/services">Services</a>
-                </li>
-            </ul>
+        <li class="nav-item">
+            <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'home' %}"></i> Home</a>
+        </li>
 
-            <!-- Logout Button (Right Side) -->
-            <a href="{% url 'logout' %}" class="btn btn-danger ms-3 px-4">Logout</a>
-        </div>
+        <li class="nav-item">
+            <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about' %}"></i> About</a>
+        </li>
 
-    </div>
+        <li class="nav-item">
+            <a class="nav-link {% if request.path == '/services/' %}active{% endif %}" href="{% url 'services' %}"></i> Services</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link {% if request.path == '/logout/' %}active{% endif %}" href="{% url 'logout' %}"></i> Logout</a>
+        </li>
+
+    </ul>
+
+  </div>
 </nav>
 
 </nav>
@@ -51,7 +52,7 @@
 </head>
 
 <div class="service-container">
-    <h1>🌾 Village Development Services</h1>
+    <h1>Village Development Services</h1>
     <p>We work on rural development, education, sanitation, and farming.</p>
 
     <!-- Mission & Vision -->
