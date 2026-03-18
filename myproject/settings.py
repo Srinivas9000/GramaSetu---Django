@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY
-SECRET_KEY = os.getenv("SECRET_KEY", "default_fallback_secret_key")
+SECRET_KEY = "your-secret-key"
 
 DEBUG = True
 
@@ -25,7 +25,6 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "gramasetu-django-production.up.railway.app",
 ]
-
 CSRF_TRUSTED_ORIGINS = ['https://nivas.pythonanywhere.com', 'https://www.nivas.pythonanywhere.com']
 
 INTERNAL_IPS = ['127.0.0.1', 'localhost:8000']
