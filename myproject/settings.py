@@ -19,8 +19,12 @@ SECRET_KEY = os.getenv("SECRET_KEY", "default_fallback_secret_key")
 
 DEBUG = True
 
-ALLOWED_HOSTS = [    'nivas.pythonanywhere.com',
-    'www.nivas.pythonanywhere.com']
+ALLOWED_HOSTS = [
+    "nivas.pythonanywhere.com",
+    ".pythonanywhere.com",
+    "localhost",
+    "127.0.0.1"
+]
 
 CSRF_TRUSTED_ORIGINS = ['https://nivas.pythonanywhere.com', 'https://www.nivas.pythonanywhere.com']
 
