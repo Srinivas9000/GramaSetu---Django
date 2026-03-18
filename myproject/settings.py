@@ -19,9 +19,10 @@ SECRET_KEY = os.getenv("SECRET_KEY", "default_fallback_secret_key")
 
 DEBUG = os.getenv("DEBUG") == "True"
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1','gramasetu-django-production.up.railway.app']
+ALLOWED_HOSTS = [    'nivas.pythonanywhere.com',
+    'www.nivas.pythonanywhere.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://gramasetu-django-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://nivas.pythonanywhere.com', 'https://www.nivas.pythonanywhere.com']
 
 INTERNAL_IPS = ['127.0.0.1', 'localhost:8000']
 # APPLICATIONS
