@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load static %}
+{% if success %}
+
+<div class="alert alert-success">
+
+{{ success }}
+
+</div>
+
+{% endif %}
+{% block maincontent %}
+<head>
+    <style>
+         .back-btn {
+        display: flex;
+        padding: 6px 8px;
+        background: #1e90ff;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        }
+       .back-btn:hover {
+        background: #91e780;
+       }
+    </style>
+</head>
+<div class="container py-5">
+<a href="{% url 'home' %}" class="back-btn">&larr; Back to Home</a>
+<br><br><br>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+            <div class="card shadow-lg border-0 rounded-4">
+
+                <div class="card-body p-5">
+
+                    <h2 class="text-center mb-4">
+                        📢 Report Village Issue
+                    </h2>
+
+                    <p class="text-center text-muted mb-4">
+                        Describe the problem and upload a photo or video.
+                    </p>
+
+                    <form method="POST" enctype="multipart/form-data">
+
+                        {% csrf_token %}
+
+                        <!-- Issue Description -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label fw-bold">
+                                Describe the Issue
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="6"
+                                name="issue"
+                                placeholder="Example:
+Broken road near school...
+Street lights are not working...
+Water leakage...
+Garbage collection problem..."
+                                required></textarea>
+
+                        </div>
+
+                        <!-- Upload Image/Video -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label fw-bold">
+
+                                Upload Image / Video
+
+                            </label>
+
+                            <input
+                                type="file"
+                                class="form-control"
+                                name="media"
+
+                                accept="image/*,video/*"
+
+                                capture="environment">
+
+                            <small class="text-muted">
+
+                                Mobile users can directly capture a photo or video.
+
+                            </small>
+
+                        </div>
+
+                        <button class="btn btn-success w-100">
+
+                            Submit Issue
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

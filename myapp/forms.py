@@ -27,3 +27,11 @@ class FeedbackForm(forms.ModelForm):
                 'placeholder': 'Rating (1-5)'
             }),
         }
+from django import forms
+from .models import VillageIssue
+
+class VillageIssueForm(forms.ModelForm):
+    class Meta:
+        model = VillageIssue
+        fields = ['issue', 'media']
+

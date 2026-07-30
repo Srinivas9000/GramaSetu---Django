@@ -453,6 +453,14 @@ img, video{
    STATS CARDS FIX
 ============================== */
 
+<<<<<<< HEAD
+/* =====================================================
+   RESPONSIVE STATS CARDS (ADD THIS AT THE END OF CSS)
+===================================================== */
+
+/* Desktop */
+=======
+>>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 .new-stats{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -462,6 +470,100 @@ img, video{
 
 /* Tablet */
 @media (max-width:992px){
+<<<<<<< HEAD
+
+.new-stats{
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+}
+
+/* Mobile */
+@media (max-width:360px){
+
+.new-stats{
+
+    grid-template-rows:repeat(4,1fr);
+
+    gap:5px;
+
+    padding:0 12px;
+
+    margin-top:15px;
+
+}
+
+.stat-card{
+
+    padding:18px 10px;
+
+    border-radius:14px;
+
+}
+
+.stat-icon{
+
+    width:50px;
+    height:50px;
+    font-size:22px;
+    margin-bottom:10px;
+
+}
+
+.stat-card h3{
+
+    font-size:24px;
+    margin-bottom:6px;
+
+}
+
+.stat-card p{
+
+    font-size:11px;
+    line-height:1.4;
+
+}
+
+}
+
+/* Small Mobile */
+@media (max-width:360px){
+
+.new-stats{
+
+    gap:10px;
+    padding:0 8px;
+
+}
+
+.stat-card{
+
+    padding:15px 8px;
+
+}
+
+.stat-icon{
+
+    width:42px;
+    height:42px;
+    font-size:18px;
+
+}
+
+.stat-card h3{
+
+    font-size:20px;
+
+}
+
+.stat-card p{
+
+    font-size:10px;
+
+}
+
+=======
 .new-stats{
     grid-template-columns:repeat(2,1fr);
 }
@@ -472,6 +574,7 @@ img, video{
 .new-stats{
     grid-template-columns:1fr;
 }
+>>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 }
 
 /* ==============================
@@ -578,4 +681,8 @@ font-size:18px;
 
 .nav-link:hover{
 color:#198754;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30

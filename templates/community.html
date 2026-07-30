@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block maincontent %}
+
+<div class="container py-5">
+
+<h2 class="text-center mb-5">
+
+Village Community
+
+</h2>
+
+{% for issue in issues %}
+
+<div class="card shadow mb-4">
+
+<div class="card-body">
+
+<h5>
+
+{{ issue.user.username }}
+
+</h5>
+
+<small>
+
+{{ issue.created_at }}
+
+</small>
+
+<hr>
+
+<p>
+
+{{ issue.issue }}
+
+</p>
+
+{% if issue.media %}
+
+{% if ".mp4" in issue.media.url %}
+
+<video controls width="100%">
+
+<source src="{{ issue.media.url }}">
+
+</video>
+
+{% else %}
+
+<img src="{{ issue.media.url }}"
+
+class="img-fluid rounded">
+
+{% endif %}
+
+{% endif %}
+
+<br><br>
+
+{% if request.user == issue.user or request.user.is_superuser %}
+
+<a href="{% url 'delete_issue' issue.id %}"
+
+class="btn btn-danger">
+
+Delete
+
+</a>
+
+{% endif %}
+
+</div>
+
+</div>
+
+{% empty %}
+
+<div class="alert alert-info">
+
+No Issues Raised Yet
+
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

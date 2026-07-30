@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title1 %}FJ - Panchayati{% endblock title1 %}
+{% load static %}
+{% block maincontent %}
+<head>
+    <style>
+         .back-btn {
+        display: flex;
+        padding: 5px 8px;
+        background: #1e90ff;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        }
+       .back-btn:hover {
+        background: #91e780;
+       }
+    </style>
+</head>
+<a href="{% url 'panchaiyeti' %}" class="back-btn">&larr; Back to Panchayati Web</a>
+<div class="container mt-5">
+<br><br><br>
+<div class="container mt-5">
+    
+    <h5>Common Officers in a Village Secretariat</h5>
+    <p>
+       <h6>Officer	Responsibilities</h6>
+       Village Revenue Officer (VRO) --	Revenue, land records, certificates<br>
+       Village Agriculture Assistant --	Farmer services, crop surveys<br>
+       Village Horticulture Assistant --	Horticulture schemes<br>
+       ANM (Health) --	Maternal and child healthcare, vaccinations<br>
+       Village Health Secretary --	Public health programs<br>
+       Panchayat Secretary --	Village administration and sanitation<br>
+       Welfare & Education Assistant --	Welfare schemes and education services<br>
+       Engineering Assistant --	Roads, drainage, public infrastructure<br>
+       Energy Assistant --	Electricity and street lighting<br>
+       Veterinary Assistant --	Animal healthcare<br>
+       Digital Assistant --	Online citizen services and e-governance<br>
+    </p>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+{% endblock %}

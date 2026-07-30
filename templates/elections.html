@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block maincontent %}
+<head>
+    <style>
+         .back-btn {
+        display: flex;
+        padding: 5px 8px;
+        background: #1e90ff;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        }
+       .back-btn:hover {
+        background: #91e780;
+       }
+    </style>
+</head>
+<a href="{% url 'panchaiyeti' %}" class="back-btn">&larr; Back to Panchayati Web</a>
+<div class="container mt-5">
+<br><br><br>
+<h3>వార్డులు -- Wards</h3>
+<p>
+వార్డు (Ward) అనేది ఒక గ్రామాన్ని లేదా పట్టణాన్ని పరిపాలనా సౌలభ్యం కోసం చిన్న చిన్న ప్రాంతాలుగా విభజించిన భాగం. ప్రతి గ్రామంలో జనాభా, ఇళ్ల సంఖ్య మరియు భౌగోళిక పరిస్థితులను బట్టి అనేక వార్డులు ఉంటాయి. ఉదాహరణకు, మన గ్రామంలో 10 వార్డులు ఉంటే, ఆవి 10 చిన్న ప్రాంతాలుగా విభజించరు. ప్రతి వార్డులో నివసించే ప్రజల వివరాలు, ఇళ్ల సంఖ్య, ఓటర్ల జాబితా, ప్రభుత్వ పథకాల లబ్ధిదారులు, పన్నుల వివరాలు, సమస్యలు, అభివృద్ధి పనులు వంటి సమాచారం విడిగా నమోదు చేయబడుతుంది. ప్రతి వార్డుకు ప్రజలచే ఎన్నికైన ఒక వార్డు సభ్యుడు (Ward Member) ఉంటారు. ఆయన/ఆమె ఆ వార్డులోని ప్రజల సమస్యలను గ్రామ పంచాయతీ లేదా సంబంధిత ప్రభుత్వ అధికారులకు తెలియజేసి పరిష్కారం కోసం కృషి చేస్తారు.<br><br>
+
+ఎన్నికల సమయంలో (Election Time) వార్డుల ప్రాధాన్యం మరింత పెరుగుతుంది. ప్రతి వార్డుకు ప్రత్యేక ఓటర్ల జాబితా (Electoral Roll) తయారు చేస్తారు. ఆ వార్డులో నివసించే అర్హులైన ప్రతి వ్యక్తి ఓటు వేయడానికి నమోదు చేయబడతారు. వార్డు సభ్యుల ఎన్నికలు కూడా వార్డు వారీగానే జరుగుతాయి. ప్రతి వార్డులో ఏర్పాటు చేసిన పోలింగ్ కేంద్రంలో ఆ వార్డు ఓటర్లు మాత్రమే ఓటు వేస్తారు. అనంతరం వార్డు వారీగా ఓట్ల లెక్కింపు చేసి విజేతను ప్రకటిస్తారు. ఈ విధంగా ప్రతి వార్డు తన ప్రతినిధిని ఎన్నుకుంటుంది.<br><br>
+
+గ్రామ పరిపాలనలో కూడా వార్డు చాలా ముఖ్యమైనది. ప్రతి వార్డుకు సంబంధించిన ప్రజల వివరాలు (పేరు, కుటుంబం, చిరునామా), ఇళ్ల సంఖ్య, జనాభా, ఓటర్ల సమాచారం, ప్రభుత్వ సంక్షేమ పథకాల లబ్ధిదారులు, పన్నుల వివరాలు, తాగునీటి సమస్యలు, వీధి దీపాల సమస్యలు, డ్రైనేజీ సమస్యలు, రోడ్ల పరిస్థితి, అభివృద్ధి పనులు, ఆరోగ్య కార్యక్రమాలు, శుభ్రత కార్యక్రమాలు, ఫిర్యాదులు వంటి అన్ని వివరాలు వార్డు వారీగా నిర్వహిస్తారు. దీని వల్ల ఏ సమస్య ఏ వార్డులో ఉందో అధికారులు సులభంగా గుర్తించి త్వరగా పరిష్కరించగలరు.</p>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-1' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-1</h6>
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-2' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-2</h6>
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-3' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-3</h6>
+
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-4' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-4</h6>
+
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-5' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-5</h6>
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-6' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-6</h6>
+
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-7' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-7</h6>
+
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-8' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-8</h6>
+
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-9' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-9</h6>
+
+
+    </a>
+
+</div>
+<div class="text-left mt-2">
+
+    <a href="{% url 'ward-10' %}"
+       class="btn btn-success btn-lg">
+
+        <h6>ward-10</h6>
+
+
+    </a>
+
+</div>
+ {% endblock %}

@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+<head>
+    <style>
+         .back-btn {
+        display: flex;
+        padding: 5px 8px;
+        background: #1e90ff;
+        color: white;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        float: left;
+        margin-bottom: 20px;
+        margin-top: 0px;
+        }
+       .back-btn:hover {
+        background: #91e780;
+       }
+    </style>
+</head>
+<a href="{% url 'panchaiyeti' %}" class="back-btn">&larr; Back to Panchayati Web</a>
+<div class="container mt-5">
+<br><br><br>
+<h5>Local Activities -- గ్రామ పంచాయతీ కార్యక్రమాలు</h5>
+
+<p>
+ Gram Sabha Meeting                | గ్రామ సభ సమావేశం                  <br>
+ Village Development Meeting       | గ్రామ అభివృద్ధి సమావేశం           <br>
+ Clean Village Campaign            | గ్రామ పరిశుభ్రత కార్యక్రమం        <br>
+ Tree Plantation Drive             | మొక్కలు నాటే కార్యక్రమం           <br>
+ Drinking Water Distribution       | తాగునీటి పంపిణీ                   <br>
+ Road Repair Work                  | రహదారి మరమ్మత్తు పనులు            <br>
+ Street Light Maintenance          | వీధి దీపాల నిర్వహణ                <br>
+ Drainage Cleaning                 | కాలువల శుభ్రపరిచే కార్యక్రమం      <br>
+ Garbage Collection                | చెత్త సేకరణ                       <br>
+ Sanitation Awareness Program      | పారిశుద్ధ్య అవగాహన కార్యక్రమం     <br>
+ Health Check-up Camp              | ఆరోగ్య పరీక్షా శిబిరం             <br>
+ Vaccination Drive                 | టీకా కార్యక్రమం                   <br>
+ Blood Donation Camp               | రక్తదాన శిబిరం                   <br>
+ Eye Check-up Camp                 | కంటి పరీక్షా శిబిరం               <br>
+ Agriculture Awareness Program     | వ్యవసాయ అవగాహన కార్యక్రమం         <br>
+ Crop Survey                       | పంట సర్వే                         <br>
+ Seed Distribution                 | విత్తనాల పంపిణీ                   <br>
+ Fertilizer Distribution           | ఎరువుల పంపిణీ                     <br>
+ Farmer Training Program           | రైతు శిక్షణ కార్యక్రమం            <br>
+ Livestock Vaccination             | పశువులకు టీకాల కార్యక్రమం         <br>
+ Dairy Development Program         | పాల ఉత్పత్తి అభివృద్ధి కార్యక్రమం <br>
+ Self Help Group Meeting           | స్వయం సహాయక సంఘ సమావేశం          <br>
+ Women Empowerment Program         | మహిళా సాధికారత కార్యక్రమం         <br>
+ Youth Skill Development           | యువత నైపుణ్యాభివృద్ధి కార్యక్రమం  <br>
+ Employment Awareness Camp         | ఉపాధి అవగాహన శిబిరం            <br>
+ Job Fair                          | ఉద్యోగ మేళా                      <br>
+ School Enrollment Drive           | పాఠశాల ప్రవేశోత్సవ కార్యక్రమం     <br>
+ Scholarship Awareness             | విద్యార్థి ఉపకార వేతన అవగాహన      <br>
+ Mid-Day Meal Inspection           | మధ్యాహ్న భోజన పథకం తనిఖీ          <br>
+ Anganwadi Inspection              | అంగన్‌వాడీ తనిఖీ                  <br>
+ Nutrition Awareness Program       | పోషకాహార అవగాహన కార్యక్రమం        <br>
+ Pension Distribution              | పెన్షన్ పంపిణీ                    <br>
+ Welfare Scheme Registration       | సంక్షేమ పథకాల నమోదు               <br>
+ Aadhaar Update Camp               | ఆధార్ నవీకరణ శిబిరం               <br>
+ Voter ID Registration             | ఓటరు గుర్తింపు కార్డు నమోదు       <br>
+ Birth Certificate Issue           | జనన ధృవీకరణ పత్రం జారీ           <br>
+ Death Certificate Issue           | మరణ ధృవీకరణ పత్రం జారీ            <br>
+ Income Certificate Verification   | ఆదాయ ధృవీకరణ పత్రం పరిశీలన        <br>
+ Caste Certificate Verification    | కుల ధృవీకరణ పత్రం పరిశీలన         <br>
+ Residence Certificate Issue       | నివాస ధృవీకరణ పత్రం జారీ          <br>
+ Property Tax Collection           | ఆస్తి పన్ను వసూలు                 <br>
+ Water Tax Collection              | నీటి పన్ను వసూలు                  <br>
+ Electricity Complaint Resolution  | విద్యుత్ ఫిర్యాదుల పరిష్కారం      <br>
+ Drinking Water Complaint          | తాగునీటి ఫిర్యాదు                 <br>
+ Road Damage Complaint             | రహదారి నష్టం ఫిర్యాదు             <br>
+ Public Grievance Meeting          | ప్రజా ఫిర్యాదుల సమావేశం           <br>
+ Disaster Relief Activity          | విపత్తు సహాయక కార్యక్రమం          <br>
+ Flood Relief Work                 | వరద సహాయక పనులు                  <br>
+ Fire Safety Awareness             | అగ్ని ప్రమాద అవగాహన కార్యక్రమం    <br>
+ Cultural Festival Celebration     | సాంస్కృతిక ఉత్సవాల నిర్వహణ        <br>
+ Sports Competition                | క్రీడా పోటీలు                     <br>
+ Independence Day Celebration      | స్వాతంత్ర్య దినోత్సవ వేడుకలు      <br>
+ Republic Day Celebration          | గణతంత్ర దినోత్సవ వేడుకలు          <br>
+ Village Festival Arrangement      | గ్రామోత్సవ నిర్వహణ                <br>
+ Public Awareness Rally            | ప్రజా అవగాహన ర్యాలీ               <br>
+ Digital Service Assistance        | డిజిటల్ సేవల సహాయం                <br>
+ Online Application Support        | ఆన్‌లైన్ దరఖాస్తు సహాయం           <br>
+ Village Survey                    | గ్రామ సర్వే                     <br> |
+ House-to-House Survey             | ఇంటింటి సర్వే                     <br>
+ Village Infrastructure Inspection | గ్రామ మౌలిక సదుపాయాల తనిఖీ        <br>
+ Community Hall Maintenance        | కమ్యూనిటీ హాల్ నిర్వహణ            <br>
+</p>
+<br><br>
+</div>
+</div>
+{% endblock %}
