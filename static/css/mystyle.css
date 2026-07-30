@@ -449,18 +449,8 @@ img, video{
 
 }
 
-/* ==============================
-   STATS CARDS FIX
-============================== */
-
-<<<<<<< HEAD
-/* =====================================================
-   RESPONSIVE STATS CARDS (ADD THIS AT THE END OF CSS)
-===================================================== */
 
 /* Desktop */
-=======
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 .new-stats{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -470,7 +460,6 @@ img, video{
 
 /* Tablet */
 @media (max-width:992px){
-<<<<<<< HEAD
 
 .new-stats{
     grid-template-columns:repeat(2,1fr);
@@ -563,7 +552,7 @@ img, video{
 
 }
 
-=======
+
 .new-stats{
     grid-template-columns:repeat(2,1fr);
 }
@@ -574,7 +563,6 @@ img, video{
 .new-stats{
     grid-template-columns:1fr;
 }
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 }
 
 /* ==============================
@@ -681,8 +669,4 @@ font-size:18px;
 
 .nav-link:hover{
 color:#198754;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30

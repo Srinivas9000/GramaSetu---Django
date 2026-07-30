@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-<<<<<<< HEAD
 from .forms import FeedbackForm, VillageIssueForm
 
 
@@ -14,7 +13,6 @@ def home(request):
 def about(request):
     return render(request, "about.html")
 
-=======
 from .forms import FeedbackForm
 
 
@@ -27,7 +25,6 @@ def about(request):
     return render(request, "about.html")
 
 
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 def panchaiyeti(request):
     return render(request, "panchaiyeti.html")
 
@@ -48,7 +45,6 @@ def school(request):
 def sports(request):
     return render(request, "sports.html")
 
-<<<<<<< HEAD
 def elections(request):
     return render(request, "elections.html")    
 
@@ -93,8 +89,6 @@ def localactivities(request):
     return render(request, "localactivities.html")
 
 
-=======
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 def services(request):
 
     if request.method == "POST":
@@ -116,10 +110,7 @@ def services(request):
     return render(request, "services.html", {"form": form})
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 def register_view(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -166,7 +157,6 @@ def logout_view(request):
     logout(request)
     return redirect('login')
 
-<<<<<<< HEAD
 from django.shortcuts import render
 @login_required
 def issue(request):
@@ -269,7 +259,5 @@ def panchaiyeti(request):
                   {
                       "gallery": gallery
                   })
-=======
 
 
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30

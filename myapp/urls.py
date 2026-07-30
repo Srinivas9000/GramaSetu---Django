@@ -7,7 +7,6 @@ urlpatterns = [
     path('logout/', views.logout_view, name='logout'),
     path('home/', views.home, name='home'),
     path('services/', views.services, name='services'),
-<<<<<<< HEAD
     path("issue/", views.issue, name="issue"),
     path('community/', views.community, name='community'),
     path('delete-issue/<int:issue_id>/', views.delete_issue, name='delete_issue'),
@@ -25,6 +24,4 @@ urlpatterns = [
     path('govtactivities/', views.govtactivities, name='govtactivities'),
     path('employeeinformation/', views.employeeinformation, name='employeeinformation'),
     path('localactivities/', views.localactivities, name='localactivities'),
-=======
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
 ]

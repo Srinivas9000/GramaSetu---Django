@@ -9,7 +9,7 @@ class Feedback(models.Model):
 
    
 def __str__(self):
-<<<<<<< HEAD
+
         return f"{self.name} - {self.email} - {self.rating}"
 
 from django.db import models
@@ -93,6 +93,5 @@ class TempleGallery(models.Model):
 
     def __str__(self):
         return self.name
-=======
+
         return f"{self.name} - {self.email} - {self.rating}"
->>>>>>> 94fe287e9a4711d1c632e1ba87a93186096f6d30
