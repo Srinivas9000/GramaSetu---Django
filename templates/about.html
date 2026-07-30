@@ -1,37 +1,38 @@
-{% extends "base.html" %} {% block title1 %}FJ - About{% endblock title1 %}
+{% extends "base.html" %}
+{% block title1 %}FJ - About{% endblock title1 %}
 {% load static %}
+
 {% block carousel %}
-<div id="carouselExampleIndicators"  class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
-    
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
   </div>
-     
-   <div class="carousel-inner">
+
+  <div class="carousel-inner">
     <div class="carousel-item">
-      <img src="/media/images/entranceimg2.jpeg"  class="d-block w-100" alt="nature3"  style="height: 600px; object-fit: cover;">
+      <img src="/media/images/entranceimg2.jpeg" class="d-block w-100" alt="nature3" style="height: 600px; object-fit: cover;">
     </div>
     <div class="carousel-item active">
-        <video width="100%" height="650" controls autoplay muted loop>
-            <source src="/media/videos/v entrance video1.mp4" type="video/mp4">
-        </video>
+      <video width="100%" height="650" controls autoplay muted loop>
+        <source src="/media/videos/v entrance video1.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="carousel-item">
-        <video width="100%" height="650" controls autoplay muted loop>
-            <source src="/media/videos/v nature vedio3.mp4" type="video/mp4">
-        </video>
+      <video width="100%" height="650" controls autoplay muted loop>
+        <source src="/media/videos/v nature vedio3.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="carousel-item">
-      <img src="/media/images/villagenatureimg12.jpeg" class="d-block w-100" alt="nature3"  style="height: 600px; object-fit: cover;">
+      <img src="/media/images/villagenatureimg12.jpeg" class="d-block w-100" alt="nature3" style="height: 600px; object-fit: cover;">
     </div>
     <div class="carousel-item">
-      <img src="/media/images/skyimg2.jpeg" class="d-block w-100" alt="nature3"  style="height: 600px; object-fit: cover;">
+      <img src="/media/images/skyimg2.jpeg" class="d-block w-100" alt="nature3" style="height: 600px; object-fit: cover;">
     </div>
-</div>
-
+  </div>
 
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -44,148 +45,177 @@
   </button>
 </div>
 {% endblock carousel %}
+
 {% block maincontent %}
+<div class="about-container">
 
-<div class="about-container"><br><br>
+  <!-- Header / Village intro -->
+  <section class="about-header py-4">
+    <h6 style="text-align:center;">About Our Village Development Initiative</h6>
 
-    <!-- Header -->
-    <section class="about-header">
-        <h6 style="text-align:center;">About Our Village Development Initiative</h6>
-    
-  <div class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 col-md-13">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="card village-text-card">
+            <div class="card-header">
+              <h4><strong>మా గ్రామం గురించి</strong></h4>
+            </div>
 
-  <div class="card village-text-card">
-  <div class="card-header">
-  <h4 bold><strong> మా గ్రామం గురించి</strong></h4>
-  </div>
+            <div class="card-body">
+              <p class="card-text">ఫరిజెల్లిపేట మా గోదావరి జిల్లాలో ఉన్న ఒక చిన్న పల్లెటూరు అయినప్పటికీ, ఆ ఊరిని ఒక్కసారి చూసినవారికి అది ఎప్పటికీ మరిచిపోలేని అనుభూతిని ఇస్తుంది. ఈ గ్రామం చుట్టూ విస్తరించిన పచ్చని పొలాలు, నిశ్శబ్దంగా ప్రవహించే కాలువలు, ఉదయం లేచినప్పుడు వినిపించే పక్షుల కిలకిలరావాలు — ఇవన్నీ కలసి ఫరిజెల్లిపేటను నిజమైన గ్రామీణ స్వర్గధామంగా మార్చాయి. నగరాల గందరగోళానికి దూరంగా, ప్రకృతితో మమేకమై జీవించే ప్రజల జీవనశైలి ఈ ఊరి ప్రత్యేకత.</p>
+            </div>
 
-  <div class="card-body">
-  <p class="card-text">ఫరిజెల్లిపేట మా గోదావరి జిల్లాలో ఉన్న ఒక చిన్న పల్లెటూరు అయినప్పటికీ, ఆ ఊరిని ఒక్కసారి చూసినవారికి అది ఎప్పటికీ మరిచిపోలేని అనుభూతిని ఇస్తుంది. ఈ గ్రామం చుట్టూ విస్తరించిన పచ్చని పొలాలు, నిశ్శబ్దంగా ప్రవహించే కాలువలు, ఉదయం లేచినప్పుడు వినిపించే పక్షుల కిలకిలరావాలు — ఇవన్నీ కలసి ఫరిజెల్లిపేటను నిజమైన గ్రామీణ స్వర్గధామంగా మార్చాయి. నగరాల గందరగోళానికి దూరంగా, ప్రకృతితో మమేకమై జీవించే ప్రజల జీవనశైలి ఈ ఊరి ప్రత్యేకత.</p>
-  </div>
-  <div class="card-body">
-  <p class="card-text">గ్రామంలో గ్రామ పంచాయతీ, గ్రామ సచివాలయం మరియు వివిధ ప్రభుత్వ శాఖల సహకారంతో ప్రజలకు అవసరమైన సేవలు అందించబడుతున్నాయి. జనన, మరణ, ఆదాయ, కుల, నివాస ధృవీకరణ పత్రాలు, ప్రభుత్వ సంక్షేమ పథకాల నమోదు, పెన్షన్ సేవలు, రైతు సేవలు మరియు ఇతర పౌర సేవలు గ్రామ సచివాలయం ద్వారా సమర్థవంతంగా నిర్వహించబడుతున్నాయి. గ్రామాన్ని వార్డులుగా విభజించడం ద్వారా ప్రతి ప్రాంతంలోని ప్రజల అవసరాలు, సమస్యలు మరియు అభివృద్ధి పనులను సులభంగా గుర్తించి త్వరితగతిన పరిష్కరించే విధానం అమలులో ఉంది.</p>
-  </div>
-  <div class="card-body">
-  <p class="card-text">ఈ గ్రామ వెబ్‌సైట్ గ్రామానికి సంబంధించిన సమగ్ర సమాచారాన్ని ఒకే వేదికపై అందించడానికి రూపొందించబడింది. గ్రామంలోని వార్డులు, ప్రజా సౌకర్యాలు, ప్రభుత్వ పథకాలు, అభివృద్ధి పనులు, స్థానిక కార్యక్రమాలు, ప్రజా ఫిర్యాదులు, అత్యవసర సంప్రదింపు వివరాలు మరియు ముఖ్యమైన ప్రకటనలను ప్రజలకు సులభంగా అందుబాటులో ఉంచడం దీని ముఖ్య ఉద్దేశ్యం. పారదర్శకమైన పరిపాలన, వేగవంతమైన సేవలు మరియు గ్రామాభివృద్ధిలో ప్రజల భాగస్వామ్యాన్ని పెంపొందించడం ద్వారా డిజిటల్ గ్రామ నిర్మాణానికి ఈ వెబ్‌సైట్ ఒక ముఖ్యమైన వేదికగా నిలుస్తుంది.</p>
+            <div class="card-body">
+              <p class="card-text">గ్రామంలో గ్రామ పంచాయతీ, గ్రామ సచివాలయం మరియు వివిధ ప్రభుత్వ శాఖల సహకారంతో ప్రజలకు అవసరమైన సేవలు అందించబడుతున్నాయి. జనన, మరణ, ఆదాయ, కుల, నివాస ధృవీకరణ పత్రాలు, ప్రభుత్వ సంక్షేమ పథకాల నమోదు, పెన్షన్ సేవలు, రైతు సేవలు మరియు ఇతర పౌర సేవలు గ్రామ సచివాలయం ద్వారా సమర్థవంతంగా నిర్వహించబడుతున్నాయి. గ్రామాన్ని వార్డులుగా విభజించడం ద్వారా ప్రతి ప్రాంతంలోని ప్రజల అవసరాలు, సమస్యలు మరియు అభివృద్ధి పనులను సులభంగా గుర్తించి త్వరితగతిన పరిష్కరించే విధానం అమలులో ఉంది.</p>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">ఈ గ్రామ వెబ్‌సైట్ గ్రామానికి సంబంధించిన సమగ్ర సమాచారాన్ని ఒకే వేదికపై అందించడానికి రూపొందించబడింది. గ్రామంలోని వార్డులు, ప్రజా సౌకర్యాలు, ప్రభుత్వ పథకాలు, అభివృద్ధి పనులు, స్థానిక కార్యక్రమాలు, ప్రజా ఫిర్యాదులు, అత్యవసర సంప్రదింపు వివరాలు మరియు ముఖ్యమైన ప్రకటనలను ప్రజలకు సులభంగా అందుబాటులో ఉంచడం దీని ముఖ్య ఉద్దేశ్యం. పారదర్శకమైన పరిపాలన, వేగవంతమైన సేవలు మరియు గ్రామాభివృద్ధిలో ప్రజల భాగస్వామ్యాన్ని పెంపొందించడం ద్వారా డిజిటల్ గ్రామ నిర్మాణానికి ఈ వెబ్‌సైట్ ఒక ముఖ్యమైన వేదికగా నిలుస్తుంది.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio intro heading -->
+  <section class="portfolio-intro py-3">
+    <h1 style="text-align:center;">About Our Village Development Initiative</h1>
+    <p style="text-align:center;">Empowering rural communities through digital solutions and sustainable growth.</p>
+  </section>
+
+  <!-- Portfolio cards grid -->
+  <div class="container">
+    <div class="row gy-4 portfolio-grid py-4">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="village-card">
+          <img src="/media/images/vinayakatemple.jpeg" alt="Temple Image">
+          <div class="card-content">
+            <h3>Temples</h3>
+            <p>All historical and devotional temples located in our village.</p>
+            <a href="/temples/" class="card-btn">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="village-card">
+          <img src="/media/images/panchaiyrti.jpeg" alt="Panchayathi Office">
+          <div class="card-content">
+            <h3>Panchayathi</h3>
+            <p>Village development, management and survey details.</p>
+            <a href="/panchaiyeti/" class="card-btn">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="village-card">
+          <img src="/media/images/villagenatareimg11.jpeg" alt="Tourism Image">
+          <div class="card-content">
+            <h3>Tourism</h3>
+            <p>Explore natural locations and beautiful tourist spots.</p>
+            <a href="/tourism/" class="card-btn">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="village-card">
+          <img src="/media/images/farmingimg2.jpeg" alt="Farming Image">
+          <div class="card-content">
+            <h3>Farming</h3>
+            <p>Indian power farmer life.</p>
+            <a href="/farming/" class="card-btn">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="village-card">
+          <img src="/media/images/village nature img6.jpeg" alt="Sports Image">
+          <div class="card-content">
+            <h3>Sports</h3>
+            <p>Village Local Games</p>
+            <a href="/sports/" class="card-btn">View More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="village-card">
+          <img src="/media/images/schoolimg2.jpeg" alt="School Image">
+          <div class="card-content">
+            <h3>School</h3>
+            <p>Village School</p>
+            <a href="/school/" class="card-btn">View More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 
 </div>
-</section><br><br>
+<br>
+<br>
+<footer class="footer-section">
+  <div class="footer-inner d-flex justify-content-center align-items-center text-center flex-wrap">
 
-  <div class="row gy-4 portfolio-grid">
-        <h1 style="text-align:center;">About Our Village Development Initiative</h1>
-        <p style="text-align:center;">Empowering rural communities through digital solutions and sustainable growth.</p>
-
-    </section><br><br>
-
-        <div class="row gy-4 portfolio-grid">
-
-  <!-- CARD 1 -->
-  <div class="col-lg-4 col-md-6">
-    <div class="village-card">
-      <img src="/media/images/vinayakatemple.jpeg" alt="Temple Image">
-      <div class="card-content">
-        <h3>Temples</h3>
-        <p>All historical and devotional temples located in our village.</p>
-        <a href="/temples/" class="card-btn">View More</a>
+    <!-- Address -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="footer-icon">
+        <i class="bi bi-geo-alt"></i>
+      </div>
+      <div>
+        <h6>Address</h6>
+        <p>Farizellipeta<br>Rajanagaram, AP, 533294</p>
       </div>
     </div>
-  </div>
 
-  <!-- CARD 2 -->
-  <div class="col-lg-4 col-md-6">
-    <div class="village-card">
-      <img src="/media/images/panchaiyrti.jpeg" alt="Panchayathi Office">
-      <div class="card-content">
-        <h3>Panchayathi</h3>
-                  <p>Village development, management and survey details.</p>
-        <a href="/panchaiyeti/" class="card-btn">View More</a>
+    <!-- Contact -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="footer-icon">
+        <i class="bi bi-telephone"></i>
+      </div>
+      <div>
+        <h6>Contact</h6>
+        <p>+91 9876543210<br>Instagram: @beauty_of_fj</p>
       </div>
     </div>
-  </div>
 
-  <!-- CARD 3 -->
-  <div class="col-lg-4 col-md-6">
-    <div class="village-card">
-      <img src="/media/images/villagenatareimg11.jpeg" alt="Tourism Image">
-      <div class="card-content">
-        <h3>Tourism</h3>
-        <p>Explore natural locations and beautiful tourist spots.</p>
-        <a href="/tourism/" class="card-btn">View More</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4 col-md-6">
-    <div class="village-card">
-      <img src="/media/images/farmingimg2.jpeg" alt="Tourism Image">
-      <div class="card-content">
-        <h3>Farming</h3>
-        <p> indian power farmaer life.</p>
-        <a href="/farming/" class="card-btn">View More</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4 col-md-6">
-    <div class="village-card">
-      <img src="/media/images/village nature img6.jpeg" alt="Tourism Image">
-      <div class="card-content">
-        <h3>Sports</h3>
-        <p> Village Local Games</p>
-        <a href="/sports/" class="card-btn">View More</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-4 col-md-6">
-    <div class="village-card">
-      <img src="/media/images/schoolimg2.jpeg" alt="Tourism Image">
-      <div class="card-content">
-        <h3>School</h3>
-        <p> Village School</p>
-        <a href="/school/" class="card-btn">View More</a>
-      </div>
-    </div>
-  </div>
-
-</div><br><br>
- <footer class="footer-section">
-  <div class="container py-3">
-   <div class="container d-flex justify-content-center align-items-center text-center">
-
-      <!-- Address -->
-      <div class="col-md-6 d-flex">
-        <div class="footer-icon">
-          <i class="bi bi-geo-alt"></i>
-        </div>
-        <div>
-          <h6>Address</h6>
-          <p>Farizellipeta
-          Rajanagaram, AP, 533294</p>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-md-6 d-flex">
-        <div class="footer-icon">
-          <i class="bi bi-telephone"></i>
-        </div>
-        <div>
-          <h6>Contact</h6>
-          <p>+91 9876543210
-            instagram ID: @beauty_of_fj</p>
-        </div>
-      </div>
-    </div>
   </div>
 </footer>
 {% endblock maincontent %}
 
-          </p>
+{% block extra_css %}
+<style>
+  .footer-section {
+    width: 100%;
+    margin-top: 50px;
+    padding: 25px 0;
+    background: #212529;
+    color: #fff;
+    box-shadow: 0 -2px 14px rgba(0, 0, 0, 0.25);
+  }
 
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-{% endblock maincontent %}
+  .footer-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 30px;
+    gap: 40px;
+  }
+
+  .footer-icon {
+    font-size: 12px;
+    margin-right: 12px;
+  }
+</style>
+{% endblock extra_css %}

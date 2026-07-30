@@ -7,16 +7,7 @@ from .forms import FeedbackForm, VillageIssueForm
 
 
 
-def home(request):
-    return render(request, "home.html")
 
-def about(request):
-    return render(request, "about.html")
-
-from .forms import FeedbackForm
-
-
-@login_required(login_url='login')
 def home(request):
     return render(request, "home.html")
 
