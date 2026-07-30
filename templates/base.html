@@ -9,12 +9,8 @@
     <link rel="stylesheet" href="..\static\css\mystyle.css" >
     <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-    <title>{% block title1 %}Village Portal{% endblock title1 %}</title>
+    <title>{% block title1 %}FariZellipeta{% endblock title1 %}</title>
 
-  </head>
-  <link rel="stylesheet" href="..\static\css\mystyle.css" >
-  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-  <title>{% block title1 %}Village Portal{% endblock title1 %}</title>
 
 </head>
 <body>
@@ -44,9 +40,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link text-danger" href="{% url 'logout' %}" onclick="return confirm('Are you sure you want to logout from GramaSetu?');">Logout </a> </li>
-
-            <a class="nav-link {% if request.path == '/logout/' %}active{% endif %}" href="{% url 'logout' %}"></i> Logout</a>
+          <a class="nav-link text-danger" href="{% url 'logout' %}" onclick="return confirm('Are you sure you want to logout from GramaSetu?');">Logout </a> 
         </li>
 
     </ul>
