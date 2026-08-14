@@ -16,10 +16,12 @@ except Exception:
     def load_dotenv():
         return None
     # no-op when dotenv is unavailable
-
 # Build paths inside the project
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+load_dotenv(BASE_DIR / ".env")
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # SECURITY
 SECRET_KEY = "your-secret-key"
@@ -45,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'rest_framework',
+    'rest_framework_simplejwt',
+    'ai_assistant',
 ]
 
 

@@ -1,0 +1,32 @@
+.ai-answer-card {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto 0;
+    padding: 22px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
+    border: 1px solid #e5e7eb;
+}
+
+.ai-answer-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.ai-answer-header h3 {
+    margin: 0;
+}
+
+.ai-answer-text {
+    line-height: 1.7;
+    white-space: pre-wrap;
+    color: #333;
+}
+
+#askAIButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

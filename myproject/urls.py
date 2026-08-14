@@ -40,6 +40,7 @@ urlpatterns = [
     path("services/",services,name="services"),
     path('logout/', logout_view, name='logout'), 
     path('', include('myapp.urls')),
+    path("ai/", include("ai_assistant.urls")),
     path(
         'api/token/',
         TokenObtainPairView.as_view(),

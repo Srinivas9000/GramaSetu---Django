@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GramaSetu AI Assistant</title>
+
+</head>
+
+<body>
+
+    <h1>GramaSetu AI Assistant</h1>
+
+    <input
+        type="text"
+        id="question"
+        placeholder="Ask something about GramaSetu..."
+    >
+
+    <button onclick="askAI()">
+        Ask AI
+    </button>
+
+    <div id="answer"></div>
+
+
+    <script>
+
+        function askAI() {
+
+            const question =
+                document.getElementById("question").value;
+
+            if (!question.trim()) {
+
+                alert("Please enter a question.");
+
+                return;
+            }
+
+
+            fetch("/ai/ask-ai/", {
+
+                method: "POST",
+
+                headers: {
+
+                    "Content-Type": "application/json",
+
+                    "X-CSRFToken": getCookie("csrftoken")
+
+                },
+
+                body: JSON.stringify({
+
+                    question: question
+
+                })
+
+            })
+
+            .then(response => response.json())
+
+            .then(data => {
+
+                if (data.success) {
+
+                    document.getElementById("answer").innerText =
+                        data.answer;
+
+                } else {
+
+                    document.getElementById("answer").innerText =
+                        data.error;
+
+                }
+
+            })
+
+            .catch(error => {
+
+                console.error(error);
+
+                document.getElementById("answer").innerText =
+                    "Something went wrong.";
+
+            });
+
+        }
+
+
+        function getCookie(name) {
+
+            let cookieValue = null;
+
+            if (document.cookie && document.cookie !== "") {
+
+                const cookies = document.cookie.split(";");
+
+                for (let cookie of cookies) {
+
+                    cookie = cookie.trim();
+
+                    if (cookie.startsWith(name + "=")) {
+
+                        cookieValue =
+                            decodeURIComponent(
+                                cookie.substring(name.length + 1)
+                            );
+
+                        break;
+                    }
+                }
+            }
+
+            return cookieValue;
+        }
+
+    </script>
+
+</body>
+
+</html>

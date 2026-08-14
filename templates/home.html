@@ -70,7 +70,63 @@
       <p>OF TEENAGERS IN VILLAGE</p>
     </div>
   </section>
+  <br>
+  <br>
+  <section class="ai-assistant">
+   <div class = "text-center">
+    <h2 style="color: #007bff;">GramaSetu AI Assistant</h2>
 
+    <p>
+        Ask anything about our village and GramaSetu services.
+    </p>
+
+
+    <div class="ai-search-box">
+
+        <input
+            type="text"
+            id="aiQuestion"
+            placeholder="Ask GramaSetu AI..."
+        >
+        <button style="background-color: #007bff; color: white; border: none; padding: 5px 25px; border-radius: 5px; cursor: pointer;"
+            type="button"
+            id="askAIButton"
+            onclick="askGramaSetuAI()"
+        >
+            Ask AI
+        </button>
+
+    </div>
+
+
+    <!-- AI ANSWER CARD -->
+
+    <div
+        id="aiAnswerCard"
+        class="ai-answer-card"
+        style="display: none;"
+    >
+
+        <div class="ai-answer-header">
+
+            <span>🤖</span>
+
+            <h3>GramaSetu AI</h3>
+
+        </div>
+
+
+        <div
+            id="aiAnswerText"
+            class="ai-answer-text"
+        >
+        </div>
+
+    </div>
+
+</section>
+  <br>
+  <br>
   <!-- Action buttons -->
   <section class="action-buttons">
     <div class="text-center mt-3">
